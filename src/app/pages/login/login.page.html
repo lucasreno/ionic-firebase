@@ -14,8 +14,14 @@
       <ion-label position="floating">Senha</ion-label>
       <ion-input type="password" #password required></ion-input>
     </ion-item>
+    
     <ion-button type="submit" (click)="login(email, password)" expand="block">
       Login
     </ion-button>
+
+    <ion-button type="submit" color="danger" (click)="loginGoogle()" expand="block">
+      Login com Google
+    </ion-button>
+
   </form>
 </ion-content>
